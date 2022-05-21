@@ -1,6 +1,9 @@
 # SCPA
 A R package for single cell RNA-seq data analysis created by Ruiqing Zhai and Shidian He
 
+### Installation
+For installing this package, we recommend that you download the ZIP binary file for local installation
+
 ### Operation manual
 
 First set up the working directory
