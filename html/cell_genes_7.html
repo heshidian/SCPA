@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Cell genes</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for cell_genes_7 {SCPA}"><tr><td>cell_genes_7 {SCPA}</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Cell genes</h2>
+
+<h3>Description</h3>
+
+<p>Selection and enrichment analysis of differential genes in cells.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+cell_genes_7(
+  sce,
+  group = "annotation",
+  group_cell_1 = "B_cell",
+  group_cell_2 = "NK_cell",
+  Two_cell_enrichment = TRUE,
+  dir = "./6.Cell genes"
+)
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>sce</code></td>
+<td>
+<p>Single cell Seurat data.</p>
+</td></tr>
+<tr valign="top"><td><code>group</code></td>
+<td>
+<p>Grouping data of single cells.</p>
+</td></tr>
+<tr valign="top"><td><code>group_cell_1</code></td>
+<td>
+<p>Select cell type 1.</p>
+</td></tr>
+<tr valign="top"><td><code>group_cell_2</code></td>
+<td>
+<p>Select cell type 2.</p>
+</td></tr>
+<tr valign="top"><td><code>Two_cell_enrichment</code></td>
+<td>
+<p>Analysis of differential gene enrichment in two types of cells.</p>
+</td></tr>
+<tr valign="top"><td><code>dir</code></td>
+<td>
+<p>Output data directory.</p>
+</td></tr>
+</table>
+
+
+<h3>Value</h3>
+
+<p>a sce object
+</p>
+
+<hr /><div style="text-align: center;">[Package <em>SCPA</em> version 1.0.1 <a href="00Index.html">Index</a>]</div>
+</body></html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Find markers</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for find_markers_5 {SCPA}"><tr><td>find_markers_5 {SCPA}</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Find markers</h2>
+
+<h3>Description</h3>
+
+<p>Personalized gene visualization and differential gene selection.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+find_markers_5(
+  sce,
+  group = "seurat_clusters",
+  genes_list = c("IL7R", "CD3E", "CD8A", "CD3D", "CD2"),
+  dir = "./4.Find markers"
+)
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>sce</code></td>
+<td>
+<p>Single cell Seurat data.</p>
+</td></tr>
+<tr valign="top"><td><code>group</code></td>
+<td>
+<p>Grouping data of single cells.</p>
+</td></tr>
+<tr valign="top"><td><code>genes_list</code></td>
+<td>
+<p>The expression value of selected genes was visualized.</p>
+</td></tr>
+<tr valign="top"><td><code>dir</code></td>
+<td>
+<p>Output data directory.</p>
+</td></tr>
+</table>
+
+
+<h3>Value</h3>
+
+<p>a sce object
+</p>
+
+<hr /><div style="text-align: center;">[Package <em>SCPA</em> version 1.0.1 <a href="00Index.html">Index</a>]</div>
+</body></html>

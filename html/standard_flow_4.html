@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Standard flow</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for standard_flow_4 {SCPA}"><tr><td>standard_flow_4 {SCPA}</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Standard flow</h2>
+
+<h3>Description</h3>
+
+<p>Dimension reduction, clustering and clustering of single cell data were carried out.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+standard_flow_4(
+  sce,
+  group = "orig.ident",
+  dim_number = 20,
+  dbs_rate = NULL,
+  remove_doublets = TRUE,
+  nmf_rank_number = 10,
+  Scale_cellcycle = FALSE,
+  resolution_low = 0.1,
+  resolution_up = 1,
+  resolution_by = 0.1,
+  dir = "./3.scRNAflow"
+)
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>sce</code></td>
+<td>
+<p>Single cell Seurat data.</p>
+</td></tr>
+<tr valign="top"><td><code>group</code></td>
+<td>
+<p>Grouping data of single cells.</p>
+</td></tr>
+<tr valign="top"><td><code>dim_number</code></td>
+<td>
+<p>The number of dimension reduction.</p>
+</td></tr>
+<tr valign="top"><td><code>dbs_rate</code></td>
+<td>
+<p>The expected doublet rate.</p>
+</td></tr>
+<tr valign="top"><td><code>remove_doublets</code></td>
+<td>
+<p>Whether to remove doublet data.</p>
+</td></tr>
+<tr valign="top"><td><code>nmf_rank_number</code></td>
+<td>
+<p>Choice of the factorization rank.</p>
+</td></tr>
+<tr valign="top"><td><code>Scale_cellcycle</code></td>
+<td>
+<p>Remove cell cycle effects.</p>
+</td></tr>
+<tr valign="top"><td><code>resolution_low</code></td>
+<td>
+<p>The minimum grouping parameter.</p>
+</td></tr>
+<tr valign="top"><td><code>resolution_up</code></td>
+<td>
+<p>The maximum grouping parameter.</p>
+</td></tr>
+<tr valign="top"><td><code>resolution_by</code></td>
+<td>
+<p>The interval of grouping parameters.</p>
+</td></tr>
+<tr valign="top"><td><code>dir</code></td>
+<td>
+<p>Output data directory.</p>
+</td></tr>
+</table>
+
+
+<h3>Value</h3>
+
+<p>a sce object
+</p>
+
+<hr /><div style="text-align: center;">[Package <em>SCPA</em> version 1.0.1 <a href="00Index.html">Index</a>]</div>
+</body></html>

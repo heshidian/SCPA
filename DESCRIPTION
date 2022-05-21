@@ -1,0 +1,29 @@
+Package: SCPA
+Type: Package
+Title: A R package for integrating and simplifing the analysis flow of
+        single cell RNA-seq data
+Version: 1.0.1
+Authors@R: 
+    c(
+    person("Ruiqing", "Zhai",
+           role = c("aut", "cre", "ctb"),
+           email = "zhairuiqing163@163.com"),
+    person("Shidian", "He",
+           role = c("aut", "ctb"),
+           email = "he_shidian@163.com")    
+           )
+Maintainer: Ruiqing Zhai <zhairuiqing163@163.com>
+Description: Routine process screening and personalized analysis were performed for single cells.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
+biocViews:
+Imports: clusterProfiler, NMF, ggraph, clustree, Seurat, magrittr,
+        stats, dplyr, Matrix, pheatmap, EnhancedVolcano, ggplot2,
+        gplots, reshape2, paletteer, ggpubr, ggrepel, tibble, ggsci,
+        scDblFinder, SingleR, wesanderson
+Author: Ruiqing Zhai [aut, cre, ctb],
+  Shidian He [aut, ctb]
+Built: R 4.0.0; ; 2022-05-19 10:29:42 UTC; windows

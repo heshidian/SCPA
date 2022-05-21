@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Data filtration</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for quality_control_3 {SCPA}"><tr><td>quality_control_3 {SCPA}</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Data filtration</h2>
+
+<h3>Description</h3>
+
+<p>Quality control and data screening for single cell data.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+quality_control_3(
+  sce,
+  group = "orig.ident",
+  nFeature_lower = 300,
+  nFeature_upper = 8000,
+  nCount_lower = 3,
+  nCount_upper = 10000,
+  percent_mito_lower = 0,
+  percent_mito_upper = 25,
+  percent_hb_upper = 10,
+  percent_hb_lower = 0,
+  percent_ribo_lower = 3,
+  percent_ribo_upper = 1000,
+  dir = "./2.Quality control"
+)
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>sce</code></td>
+<td>
+<p>Single cell Seurat data.</p>
+</td></tr>
+<tr valign="top"><td><code>group</code></td>
+<td>
+<p>Grouping data of single cells.</p>
+</td></tr>
+<tr valign="top"><td><code>nFeature_lower</code></td>
+<td>
+<p>The minimum number of genes detected per cell.</p>
+</td></tr>
+<tr valign="top"><td><code>nFeature_upper</code></td>
+<td>
+<p>The maximum number of genes detected per cell.</p>
+</td></tr>
+<tr valign="top"><td><code>nCount_lower</code></td>
+<td>
+<p>The minimum number of UMI per cell.</p>
+</td></tr>
+<tr valign="top"><td><code>nCount_upper</code></td>
+<td>
+<p>The maximum number of UMI per cell.</p>
+</td></tr>
+<tr valign="top"><td><code>percent_mito_lower</code></td>
+<td>
+<p>The minimum proportion of mitochondria.</p>
+</td></tr>
+<tr valign="top"><td><code>percent_mito_upper</code></td>
+<td>
+<p>The maximum proportion of mitochondria.</p>
+</td></tr>
+<tr valign="top"><td><code>percent_hb_upper</code></td>
+<td>
+<p>The maximum proportion of hemoglobin genes detected.</p>
+</td></tr>
+<tr valign="top"><td><code>percent_hb_lower</code></td>
+<td>
+<p>The minimum proportion of hemoglobin genes detected.</p>
+</td></tr>
+<tr valign="top"><td><code>percent_ribo_lower</code></td>
+<td>
+<p>The minimum gene expression ratio of ribosomal protein.</p>
+</td></tr>
+<tr valign="top"><td><code>percent_ribo_upper</code></td>
+<td>
+<p>The maximum gene expression ratio of ribosomal protein.</p>
+</td></tr>
+<tr valign="top"><td><code>dir</code></td>
+<td>
+<p>Output data directory.</p>
+</td></tr>
+</table>
+
+
+<h3>Value</h3>
+
+<p>a sce object
+</p>
+
+<hr /><div style="text-align: center;">[Package <em>SCPA</em> version 1.0.1 <a href="00Index.html">Index</a>]</div>
+</body></html>

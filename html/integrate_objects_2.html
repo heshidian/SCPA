@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Data integration</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for integrate_objects_2 {SCPA}"><tr><td>integrate_objects_2 {SCPA}</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Data integration</h2>
+
+<h3>Description</h3>
+
+<p>Multiple single cell data were combined and integrated.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+integrate_objects_2(
+  sce,
+  group = "orig.ident",
+  input.type = c("list", "merged"),
+  variablefeature.method = "vst",
+  normalization.method.selection = c("LogNormalize", "SCT"),
+  reduction.selection = c("cca", "rpca", "rlsi")
+)
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>sce</code></td>
+<td>
+<p>Single cell Seurat data.</p>
+</td></tr>
+<tr valign="top"><td><code>group</code></td>
+<td>
+<p>Grouping data of single cells.</p>
+</td></tr>
+<tr valign="top"><td><code>input.type</code></td>
+<td>
+<p>Single cell input type data</p>
+</td></tr>
+<tr valign="top"><td><code>variablefeature.method</code></td>
+<td>
+<p>Variablefeature filtering method</p>
+</td></tr>
+<tr valign="top"><td><code>normalization.method.selection</code></td>
+<td>
+<p>Standardized methods for single cell data</p>
+</td></tr>
+<tr valign="top"><td><code>reduction.selection</code></td>
+<td>
+<p>Single cell data integration method</p>
+</td></tr>
+</table>
+
+
+<h3>Value</h3>
+
+<p>a sce object
+</p>
+
+<hr /><div style="text-align: center;">[Package <em>SCPA</em> version 1.0.1 <a href="00Index.html">Index</a>]</div>
+</body></html>

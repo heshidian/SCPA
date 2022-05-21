@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Cell markers</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for cell_markers_6 {SCPA}"><tr><td>cell_markers_6 {SCPA}</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Cell markers</h2>
+
+<h3>Description</h3>
+
+<p>Cellular annotation of a single cell subpopulation.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+cell_markers_6(
+  sce,
+  group = "seurat_clusters",
+  method = c("SingleR", "personalization"),
+  cells_markers = c("PTPRC", "CD3D", "CD3E", "CD4", "CD8A", "CD19", "CD79A", "MS4A1",
+    "IGHG1", "MZB1", "SDC1", "CD68", "CD163", "CD14", "LAMP3", "IDO1", "IDO2", "CD1E",
+    "CD1C", "KLRB1", "NCR1", "FGF7", "MME", "ACTA2", "PECAM1", "VWF"),
+  dir = "./5.Cell markers"
+)
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>sce</code></td>
+<td>
+<p>Single cell Seurat data.</p>
+</td></tr>
+<tr valign="top"><td><code>group</code></td>
+<td>
+<p>Grouping data of single cells.</p>
+</td></tr>
+<tr valign="top"><td><code>method</code></td>
+<td>
+<p>Cell annotation method.If personalization is selected, run cell_markers_6_personalization.</p>
+</td></tr>
+<tr valign="top"><td><code>cells_markers</code></td>
+<td>
+<p>Cell marker genes were selected.</p>
+</td></tr>
+<tr valign="top"><td><code>dir</code></td>
+<td>
+<p>Output data directory.</p>
+</td></tr>
+</table>
+
+
+<h3>Value</h3>
+
+<p>a sce object
+</p>
+
+<hr /><div style="text-align: center;">[Package <em>SCPA</em> version 1.0.1 <a href="00Index.html">Index</a>]</div>
+</body></html>
